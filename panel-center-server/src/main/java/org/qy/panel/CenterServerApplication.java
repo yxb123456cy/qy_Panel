@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 面板中央核心服务;
+ * 面板中央核心服务;需要引入SaToken;
  */
 @SpringBootApplication
 public class CenterServerApplication {

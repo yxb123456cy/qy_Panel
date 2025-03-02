@@ -20,3 +20,19 @@ spring:
           max-idle: 10
           # 连接池中的最小空闲连接
           min-idle: 2
+  task:
+    scheduling:
+      thread-name-prefix: scheduling-
+      pool:
+        size: 2
+
+forest:
+  variables:
+    serverAddress: http://localhost:8080      # 声明全局变量，变量名: username，变量值: foo
+  backend: okhttp3 # 配置后端HTTP API为 okhttp3
+  max-connections: 100        # 连接池最大连接数
+  connect-timeout: 3000        # 连接超时时间，单位为毫秒
+  read-timeout: 3000
+  log-request: true            # 打开/关闭Forest请求日志（默认为 true）
+  log-response-status: true    # 打开/关闭Forest响应状态日志（默认为 true）
+  log-response-content: true   # 打开/关闭Forest响应内容日志（默认为 false）

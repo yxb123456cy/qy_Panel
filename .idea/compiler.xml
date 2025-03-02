@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Annotation profile for qy-panel" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -12,6 +13,7 @@
         <module name="panel-center-server" />
         <module name="panel-client-monitor" />
         <module name="panel-client-docker" />
+        <module name="panel-client-kubernetes" />
       </profile>
     </annotationProcessing>
   </component>

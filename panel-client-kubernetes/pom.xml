@@ -35,5 +35,18 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <!--k8s-fabric8 JAVA客户端-->
+        <dependency>
+            <groupId>io.fabric8</groupId>
+            <artifactId>kubernetes-client</artifactId>
+            <version>6.3.1</version>
+        </dependency>
+        <!-- Kubernetes API Model (Swagger Definitions) -->
+        <dependency>
+            <groupId>io.fabric8</groupId>
+            <artifactId>kubernetes-model</artifactId>
+            <version>6.3.1</version>
+        </dependency>
+
     </dependencies>
 </project>
