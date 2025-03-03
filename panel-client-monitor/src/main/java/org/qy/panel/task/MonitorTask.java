@@ -24,6 +24,6 @@ public class MonitorTask {
     @Async
     @Scheduled(cron = "*/5 * * * * * ")
     public void task() {
-        monitorNetUtils.updateRuntimeDetails(collect.monitorRuntimeDetail());
+       // monitorNetUtils.updateRuntimeDetails(collect.monitorRuntimeDetail());
     }
 }

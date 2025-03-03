@@ -1,7 +1,7 @@
 package org.qy.panel.tools;
 
 /**
- * 一些常量字符串整合
+ * 全局常量;
  */
 public final class Const {
     //JWT令牌
@@ -22,9 +22,17 @@ public final class Const {
     public final static String ATTR_USER_ID = "userId";
     public final static String ATTR_USER_ROLE = "userRole";
     public final static String ATTR_CLIENT = "client";
-    //消息队列
-    public final static String MQ_MAIL = "mail";
+
     //用户角色
     public final static String ROLE_ADMIN = "admin";
     public final static String ROLE_NORMAL = "user";
+
+    //消息队列相关;
+    public static final String EMAIL_EXCHANGE = "panel.email.exchange";
+    public final static String MQ_MAIL = "panel.mail.queue";
+
+    //Redis相关;
+    public static final String CACHE_PREFIX = "panel:";
+
+
 }

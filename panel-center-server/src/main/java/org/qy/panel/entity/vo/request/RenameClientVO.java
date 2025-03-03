@@ -10,9 +10,9 @@ import java.io.Serializable;
 @Data
 public class RenameClientVO implements Serializable {
     @NotNull
-    int id;
+    private   int id;
     @Length(min = 1, max = 10)
-    String name;
+    private String name;
 
     @Serial
     private static final long serialVersionUID = 1L;

@@ -19,3 +19,15 @@ spring:
           max-idle: 10
           # 连接池中的最小空闲连接
           min-idle: 2
+qy:
+  panel:
+    auth-key: 56ba28f0-159d-4832-aeff-6fd44d3baaae
+
+sa-token:
+  token-style: random-64  # token风格:随机64位字符串;
+  token-name: token
+  timeout: 10800
+  active-timeout: -1
+  is-log: true
+  is-concurrent: false
+  is-color-log: true

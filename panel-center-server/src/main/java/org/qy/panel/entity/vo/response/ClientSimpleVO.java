@@ -7,12 +7,12 @@ import java.io.Serializable;
 
 @Data
 public class ClientSimpleVO implements Serializable {
-    int id;
-    String name;
-    String location;
-    String osName;
-    String osVersion;
-    String ip;
+    private  int id;
+    private  String name;
+    private  String location;
+    private  String osName;
+    private String osVersion;
+    private String ip;
 
     @Serial
     private static final long serialVersionUID = 1L;

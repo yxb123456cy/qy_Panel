@@ -11,9 +11,9 @@ import java.io.Serializable;
 public class RenameNodeVO implements Serializable {
     int id;
     @Length(min = 1, max = 10)
-    String node;
+    private String node;
     @Pattern(regexp = "(cn|hk|jp|us|sg|kr|de)")
-    String location;
+    private  String location;
 
     @Serial
     private static final long serialVersionUID = 1L;

@@ -7,18 +7,18 @@ import java.io.Serializable;
 
 @Data
 public class ClientDetailsVO implements Serializable {
-    int id;
-    String name;
-    boolean online;
-    String node;
-    String location;
-    String ip;
-    String cpuName;
-    String osName;
-    String osVersion;
-    double memory;
-    int cpuCore;
-    double disk;
+    private  int id;
+    private  String name;
+    private   boolean online;
+    private   String node;
+    private   String location;
+    private   String ip;
+    private  String cpuName;
+    private  String osName;
+    private  String osVersion;
+    private  double memory;
+    private   int cpuCore;
+    private   double disk;
 
     @Serial
     private static final long serialVersionUID = 1L;

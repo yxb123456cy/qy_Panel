@@ -17,13 +17,13 @@ import java.util.List;
 @Data
 @Accessors(chain = true)
 public class Account implements Serializable {
-    Integer id;
-    String username;
-    String password;
-    String email;
-    String role;
-    Date registerTime;
-    String clients;
+    private long id;
+    private String username;
+    private String password;
+    private String email;
+    private String role;
+    private Date registerTime;
+    private String clients;
 
     public List<Integer> getClientList() {
         if (clients == null) return Collections.emptyList();

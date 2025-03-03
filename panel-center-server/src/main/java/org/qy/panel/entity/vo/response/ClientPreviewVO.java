@@ -7,20 +7,20 @@ import java.io.Serializable;
 
 @Data
 public class ClientPreviewVO implements Serializable {
-    int id;
-    boolean online;
-    String name;
-    String location;
-    String osName;
-    String osVersion;
-    String ip;
-    String cpuName;
-    int cpuCore;
-    double memory;
-    double cpuUsage;
-    double memoryUsage;
-    double networkUpload;
-    double networkDownload;
+    private  int id;
+    private   boolean online;
+    private   String name;
+    private   String location;
+    private   String osName;
+    private  String osVersion;
+    private  String ip;
+    private  String cpuName;
+    private  int cpuCore;
+    private  double memory;
+    private  double cpuUsage;
+    private  double memoryUsage;
+    private double networkUpload;
+    private double networkDownload;
 
     @Serial
     private static final long serialVersionUID = 1L;

@@ -12,13 +12,13 @@ import java.util.List;
 @Data
 public class CreateSubAccountVO implements Serializable {
     @Length(min = 1, max = 10)
-    String username;
+    private String username;
     @Email
-    String email;
+    private String email;
     @Length(min = 6, max = 20)
-    String password;
+    private String password;
     @Size(min = 1)
-    List<Integer> clients;
+    private List<Integer> clients;
 
     @Serial
     private static final long serialVersionUID = 1L;

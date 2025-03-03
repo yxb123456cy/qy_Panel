@@ -10,9 +10,9 @@ import java.io.Serializable;
 @Data
 public class ModifyEmailVO implements Serializable {
     @Email
-    String email;
+    private String email;
     @Length(max = 6, min = 6)
-    String code;
+    private String code;
 
     @Serial
     private static final long serialVersionUID = 1L;

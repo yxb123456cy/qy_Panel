@@ -9,23 +9,23 @@ import java.io.Serializable;
 @Data
 public class ClientDetailVO implements Serializable {
     @NotNull
-    String osArch;
+    private  String osArch;
     @NotNull
-    String osName;
+    private  String osName;
     @NotNull
-    String osVersion;
+    private  String osVersion;
     @NotNull
-    int osBit;
+    private  int osBit;
     @NotNull
-    String cpuName;
+    private  String cpuName;
     @NotNull
-    int cpuCore;
+    private  int cpuCore;
     @NotNull
-    double memory;
+    private   double memory;
     @NotNull
-    double disk;
+    private   double disk;
     @NotNull
-    String ip;
+    private   String ip;
 
     @Serial
     private static final long serialVersionUID = 1L;

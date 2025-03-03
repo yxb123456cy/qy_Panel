@@ -7,10 +7,10 @@ import java.io.Serializable;
 
 @Data
 public class SshSettingsVO implements Serializable {
-    String ip;
-    int port = 22;
-    String username;
-    String password;
+    private  String ip;
+    private  int port = 22;
+    private   String username;
+    private   String password;
 
     @Serial
     private static final long serialVersionUID = 1L;

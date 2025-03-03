@@ -20,7 +20,6 @@
 
         <module>panel-center-server</module>
         <module>panel-client-monitor</module>
-        <module>panel-client-docker</module>
         <module>panel-client-kubernetes</module>
     </modules>
     <properties>

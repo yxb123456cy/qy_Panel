@@ -10,21 +10,21 @@ import java.io.Serializable;
 @Data
 public class RuntimeDetailVO implements Serializable {
     @NotNull
-    long timestamp;
+    private   long timestamp;
     @NotNull
-    double cpuUsage;
+    private   double cpuUsage;
     @NotNull
-    double memoryUsage;
+    private   double memoryUsage;
     @NotNull
-    double diskUsage;
+    private   double diskUsage;
     @NotNull
-    double networkUpload;
+    private  double networkUpload;
     @NotNull
-    double networkDownload;
+    private   double networkDownload;
     @NotNull
-    double diskRead;
+    private    double diskRead;
     @NotNull
-    double diskWrite;
+    private   double diskWrite;
 
     @Serial
     private static final long serialVersionUID = 1L;

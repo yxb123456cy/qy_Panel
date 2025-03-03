@@ -10,9 +10,9 @@ import java.util.List;
 
 @Data
 public class RuntimeHistoryVO implements Serializable {
-    double disk;
-    double memory;
-    List<JSONObject> list = new LinkedList<>();
+    private double disk;
+    private double memory;
+    private List<JSONObject> list = new LinkedList<>();
 
     @Serial
     private static final long serialVersionUID = 1L;

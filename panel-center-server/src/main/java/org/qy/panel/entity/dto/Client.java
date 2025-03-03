@@ -12,12 +12,12 @@ import java.util.Date;
 @Data
 @Accessors(chain = true)
 public class Client implements Serializable {
-    Integer id;
-    String name;
-    String token;
-    String location;
-    String node;
-    Date registerTime;
+    private String id;
+    private String name;
+    private String token;
+    private String location;
+    private String node;
+    private Date registerTime;
 
     @Serial
     private static final long serialVersionUID = 1L;

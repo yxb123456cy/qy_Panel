@@ -13,23 +13,23 @@ import java.time.Instant;
 @Measurement(name = "runtime")
 public class RuntimeData implements Serializable {
     @Column(tag = true)
-    int clientId;
+    private   int clientId;
     @Column(timestamp = true)
-    Instant timestamp;
+    private  Instant timestamp;
     @Column
-    double cpuUsage;
+    private  double cpuUsage;
     @Column
-    double memoryUsage;
+    private  double memoryUsage;
     @Column
-    double diskUsage;
+    private   double diskUsage;
     @Column
-    double networkUpload;
+    private  double networkUpload;
     @Column
-    double networkDownload;
+    private  double networkDownload;
     @Column
-    double diskRead;
+    private   double diskRead;
     @Column
-    double diskWrite;
+    private   double diskWrite;
 
     @Serial
     private static final long serialVersionUID = 1L;

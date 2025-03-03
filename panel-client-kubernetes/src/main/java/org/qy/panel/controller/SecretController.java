@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/secret")
+@RequestMapping("kube/api/secret")
 @RequiredArgsConstructor
 @Slf4j
 public class SecretController {

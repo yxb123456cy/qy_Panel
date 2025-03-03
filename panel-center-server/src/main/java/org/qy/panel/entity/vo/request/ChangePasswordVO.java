@@ -9,9 +9,9 @@ import java.io.Serializable;
 @Data
 public class ChangePasswordVO implements Serializable {
     @Length(min = 6, max = 20)
-    String password;
+    private   String password;
     @Length(min = 6, max = 20)
-    String new_password;
+    private  String new_password;
 
     @Serial
     private static final long serialVersionUID = 1L;

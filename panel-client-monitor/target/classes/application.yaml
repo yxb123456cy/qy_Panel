@@ -1,0 +1,38 @@
+server:
+  port: 12500
+spring:
+  application:
+    name: panel-client-monitor
+
+  data:
+    redis:
+      port: 6379
+      host: localhost
+      database: 4
+      timeout: 2s
+      lettuce:
+        pool:
+          # 连接池最大连接数
+          max-active: 200
+          # 连接池最大阻塞等待时间（使用负值表示没有限制）
+          max-wait: -1ms
+          # 连接池中的最大空闲连接
+          max-idle: 10
+          # 连接池中的最小空闲连接
+          min-idle: 2
+  task:
+    scheduling:
+      thread-name-prefix: scheduling-
+      pool:
+        size: 2
+
+forest:
+  variables:
+    serverAddress: http://localhost:8080      # 声明全局变量，变量名: username，变量值: foo
+  backend: okhttp3 # 配置后端HTTP API为 okhttp3
+  max-connections: 100        # 连接池最大连接数
+  connect-timeout: 3000        # 连接超时时间，单位为毫秒
+  read-timeout: 3000
+  log-request: true            # 打开/关闭Forest请求日志（默认为 true）
+  log-response-status: true    # 打开/关闭Forest响应状态日志（默认为 true）
+  log-response-content: true   # 打开/关闭Forest响应内容日志（默认为 false）

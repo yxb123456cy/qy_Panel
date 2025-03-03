@@ -11,11 +11,11 @@ import java.util.Date;
  */
 @Data
 public class AuthorizeVO implements Serializable {
-    String username;
-    String email;
-    String role;
-    String token;
-    Date expire;
+    private  String username;
+    private  String email;
+    private  String role;
+    private  String token;
+    private  Date expire;
 
     @Serial
     private static final long serialVersionUID = 1L;

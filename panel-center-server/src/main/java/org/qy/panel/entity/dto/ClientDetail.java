@@ -11,16 +11,16 @@ import java.io.Serializable;
 @Accessors(chain = true)
 public class ClientDetail implements Serializable {
 
-    Integer id;
-    String osArch;
-    String osName;
-    String osVersion;
-    int osBit;
-    String cpuName;
-    int cpuCore;
-    double memory;
-    double disk;
-    String ip;
+    private  Integer id;
+    private  String osArch;
+    private  String osName;
+    private  String osVersion;
+    private  int osBit;
+    private  String cpuName;
+    private  int cpuCore;
+    private   double memory;
+    private  double disk;
+    private  String ip;
 
     @Serial
     private static final long serialVersionUID = 1L;

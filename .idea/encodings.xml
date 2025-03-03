@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/panel-client-kubernetes/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/panel-client-monitor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/panel-client-monitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/panel-docker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/panel-docker/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

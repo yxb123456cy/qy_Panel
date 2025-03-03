@@ -13,11 +13,11 @@ import java.io.Serializable;
 @Data
 public class EmailResetVO implements Serializable {
     @Email
-    String email;
+    private String email;
     @Length(max = 6, min = 6)
-    String code;
+    private String code;
     @Length(min = 6, max = 20)
-    String password;
+    private String password;
 
     @Serial
     private static final long serialVersionUID = 1L;

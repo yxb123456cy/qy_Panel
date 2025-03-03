@@ -8,10 +8,10 @@ import java.io.Serializable;
 
 @Data
 public class SubAccountVO implements Serializable {
-    int id;
-    String username;
-    String email;
-    JSONArray clientList;
+    private  long id;
+    private  String username;
+    private  String email;
+    private  JSONArray clientList;
 
     @Serial
     private static final long serialVersionUID = 1L;

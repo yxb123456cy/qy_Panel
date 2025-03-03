@@ -9,14 +9,14 @@ import java.io.Serializable;
 
 @Data
 public class SshConnectionVO implements Serializable {
-    int id;
-    int port;
+    private int id;
+    private  int port;
     @NotNull
     @Length(min = 1)
-    String username;
+    private   String username;
     @NotNull
     @Length(min = 1)
-    String password;
+    private  String password;
 
 
     @Serial

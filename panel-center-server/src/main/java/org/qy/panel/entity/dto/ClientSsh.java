@@ -10,10 +10,10 @@ import java.io.Serializable;
 @Accessors(chain = true)
 public class ClientSsh implements Serializable {
 
-    Integer id;
-    Integer port;
-    String username;
-    String password;
+    private    Integer id;
+    private  Integer port;
+    private  String username;
+    private String password;
 
     @Serial
     private static final long serialVersionUID = 1L;
