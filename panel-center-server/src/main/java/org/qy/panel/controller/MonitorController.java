@@ -131,7 +131,7 @@ public class MonitorController {
 
     private List<Integer> accountAccessClients(int uid) {
         Account account = new Account();
-        return account.getClientList();
+        return List.of(1,2,3);
     }
 
     private boolean isAdminAccount(String role) {

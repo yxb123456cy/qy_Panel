@@ -48,7 +48,7 @@ public class UserService {
     //初始化一个admin账号;
     private void initAdminAccount() {
         Account account = new Account();
-        long snowflakeNextId = IdUtil.getSnowflakeNextId();
+        long snowflakeNextId = 1896537494959697920L;
         account.setId(snowflakeNextId).setRole("admin").setEmail("218625671@qq.com").setClients("").setUsername("轻叶-管理员").setPassword(DigestUtils.md5DigestAsHex(("123456").getBytes(StandardCharsets.UTF_8))).setRegisterTime(new Date());
         redisTemplate.opsForHash().put(Const.CACHE_PREFIX + "account", String.valueOf(snowflakeNextId), JSON.toJSONString(account));
 
@@ -142,7 +142,6 @@ public class UserService {
                     //加入;
                     SubAccountVO vo = new SubAccountVO();
                     BeanUtils.copyProperties(account, vo);
-                    vo.setClientList(JSONArray.copyOf(account.getClientList()));
                     subAccountVOList.add(vo);
                 }
             }

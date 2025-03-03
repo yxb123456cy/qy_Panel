@@ -25,10 +25,10 @@ public class Account implements Serializable {
     private Date registerTime;
     private String clients;
 
-    public List<Integer> getClientList() {
+    /*public List<Integer> getClientList() {
         if (clients == null) return Collections.emptyList();
         return JSONArray.parse(clients).toList(Integer.class);
-    }
+    }*/
 
     @Serial
     private static final long serialVersionUID = 1L;

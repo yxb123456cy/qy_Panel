@@ -22,7 +22,7 @@ public class MonitorTask {
      * 每五秒向中央服务传递一次运行时数据;
      */
     @Async
-    @Scheduled(cron = "*/5 * * * * * ")
+    @Scheduled(cron = "*/10 * * * * ? ")
     public void task() {
        // monitorNetUtils.updateRuntimeDetails(collect.monitorRuntimeDetail());
     }

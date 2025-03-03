@@ -13,13 +13,14 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @Slf4j
 @RestControllerAdvice
 public class ValidationController {
+
+    private void logE(Exception e) {
+        log.warn("Resolved [{}: {}]", e.getClass().getName(), e.getMessage());
+    }
     /**
      * 与SpringBoot保持一致，校验不通过打印警告信息，而不是直接抛出异常
      * @return 校验结果
      */
-    private void logE(Exception e) {
-        log.warn("Resolved [{}: {}]", e.getClass().getName(), e.getMessage());
-    }
 
     @ExceptionHandler(ValidationException.class)
     public Response<Void> validateError(ValidationException exception) {

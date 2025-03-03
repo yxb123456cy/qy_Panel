@@ -17,5 +17,4 @@ import org.springframework.web.bind.annotation.*;
 public class ImageController {
     private final ImageService service;
 
-
 }

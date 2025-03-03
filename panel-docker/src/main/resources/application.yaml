@@ -20,5 +20,5 @@ spring:
           min-idle: 2
 docker:
   connect-type: tcp
-  host: 103.40.13.87
-  port: 34987
+  host: 127.0.0.1
+  port: 10086
